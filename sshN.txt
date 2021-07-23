@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 branches SEGUIMOS por la branch creada 4ta .N
+=======
+branches SEGUIMOS por la branch creada 4ta. Modificación desde GitHub
+>>>>>>> master
