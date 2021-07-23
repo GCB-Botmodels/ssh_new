@@ -1,0 +1,183 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    background-color: black;
+    color: blanchedalmond;
+}
+#contenedor{
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    overflow: hidden;
+
+}
+h1{
+    color: whitesmoke;
+    margin-left: 55%;
+    font-size: 50px;
+}
+body{
+    background-color: #000000;
+}
+
+.navegacion{
+    width: 70%;
+    max-width: 1000px;
+    margin: 5% auto;
+    background: rgb(231, 231, 231);
+    border-radius: 20px;
+}
+.navegacion ul{
+    list-style: none; /*le  digo que utilice el estilo lista a la clase navegación de la etiqueta 
+    nav por lo que debería colocarse al lado*/
+}
+.menu > li{
+    position: relative;
+    display: inline-block; /*tiene que ver con la visulización*/
+}
+.menu > li > a{
+    display: block;
+    padding: 15px 20px; /*high y width*/
+    color: #353535;
+    font-family: Impact, sans-serif;
+    text-decoration: none; /* con el valor none la propiedad text-decoration 
+    nos permite quitarle las configuración en el html en este caso el subrayado*/
+    display: flex;
+}
+.menu li a:hover{
+    color: blueviolet;
+    transition: all .3s;
+}
+header h1{
+    height: 100px;
+    background-color:rgb(70, 6, 129);
+}
+header h1{
+    font-size: 50px;
+    text-align: center;
+    line-height: 100px;
+}
+
+nav{
+    background-color: chocolate;
+    height: 50px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+nav h2{
+    font-size: 40px;
+    text-align: center;
+    line-height: 50px;
+}
+.submenu{
+    position: absolute;
+    background: #333333;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1.5s;
+}
+.submenu li a{
+    display:block;
+    width: 180%;
+    padding: 15px;
+    color: chartreuse;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration:none;
+}
+.menu li:hover .submenu{
+    visibility: visible;
+    opacity: 1;
+}
+.foto{
+    margin-left: 10px;
+}
+
+#contenido{
+    width: 700px;
+    height: 500px;
+    float: left;
+    background-color: rgb(5, 5, 99);
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+#contenido h2{
+    font-size: 30px;
+    text-align: center;
+    line-height: 500px;
+}
+/*img{
+    width: 150px;
+    margin-top: 30%;
+    margin-left: 30%;
+    position: relative;
+}*/
+aside{
+    width: 270px;
+    height: 500px;
+    background-color: darkred;
+    margin-top: 10px;
+    float: right;
+    border-radius: 20px;
+}
+aside h2{
+    margin-top: 30%;
+    font-size: 25px;
+    text-align: center;
+}
+footer{
+    clear: both;
+    background-color: darkslategrey;
+    text-align: center;
+}
+@media screen and (max-width: 650px){ /*hacer aplica el font-size definido a partir de la condición de los 650px*/
+    #contenedor > header > h1{
+        font-size: 12px;
+    }
+}
+
+/*@media screen and (max-width: 650px){
+#nav{
+    background-color:transparent;
+}
+}
+@media screen and (max-width: 650px){
+.menu > li > a{
+    padding: 10px 6px;
+    color: #e2d2d2;
+    text-decoration: none;
+    display: flex;
+}
+}
+@media screen and (max-width: 650px){
+#contenido{
+    width: 90%;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+}
+@media screen and (max-width: 650px){
+aside{
+    width: 90%;
+    background-color: darkred;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+}
+@media screen and (max-width: 650px){
+aside h2{
+    margin-top: 50%;
+}
+}
+@media screen and (max-width: 650px){
+footer{
+    clear: unset;
+    background-color: transparent;
+    text-align: center;
+}
+}*/
